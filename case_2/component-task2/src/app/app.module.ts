@@ -9,12 +9,14 @@ import { Task2 } from './task2.3/task2.3.component';
 import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { ListServiceComponent } from './list-service/list-service.component';
+import { EidtServiceComponent } from './eidt-service/eidt-service.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    Task2.1Component, Task2.2Component, Task2.3Component, HeaderComponent, NavbarComponent, FooterComponent,
+    Task2.1Component, Task2.2Component, Task2.3Component, HeaderComponent, NavbarComponent, FooterComponent, ListServiceComponent, EidtServiceComponent,
   ],
   imports: [
     BrowserModule,
