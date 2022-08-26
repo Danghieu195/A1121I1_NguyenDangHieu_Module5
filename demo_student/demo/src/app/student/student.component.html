@@ -1,0 +1,28 @@
+<h1>student profile</h1>
+<table>
+  <tr>
+    <th>Avatar</th>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Phone Number</th>
+    <th>Email</th>
+    <th>Action</th>
+  </tr>
+
+  <tr *ngFor="let stu of student">
+    <td>
+      <img style="width : 50px" [src] = "stu.avatar"/>
+    </td>
+    <td>{{stu.id}}</td>
+    <td>{{stu.name}}</td>
+    <td>{{stu.address}}</td>
+    <td>{{stu.phone}}</td>
+    <td>{{stu.email}}</td>
+    <td>
+      <button type="button" class="btn btn-red">Delete</button>
+      <button type="button" class="btn btn-primary">Detail</button>
+    </td>
+  </tr>
+</table>
+

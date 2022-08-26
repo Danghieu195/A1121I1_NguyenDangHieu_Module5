@@ -1,0 +1,39 @@
+<div class="container-fluid mt-3">
+
+  <h2>Article Information</h2>
+
+  <table>
+
+    <tr>
+      <td>Title: </td>
+      <td>
+        <textarea cols="70" [(ngModel)]="article.title"></textarea>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Url: </td>
+      <td>
+        <textarea cols="70" [(ngModel)]="article.url"></textarea>
+      </td>
+    </tr>
+
+    <tr>
+      <td></td>
+      <td>
+        <button style="float: right" (click)="addNewArticle()">Add</button>
+      </td>
+    </tr>
+
+  </table>
+</div>
+
+<hr>
+
+<div class="container-fluid">
+  <h2>Today's article</h2>
+</div>
+
+<div *ngFor="let article of articles" class="container-fluid">
+  <a href="{{article.url}}" target="_blank" class="text-decoration-none link-dark">{{article.title}}</a>: <app-like></app-like>
+</div>

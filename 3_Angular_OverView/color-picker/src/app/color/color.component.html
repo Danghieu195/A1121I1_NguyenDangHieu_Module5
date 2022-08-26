@@ -1,0 +1,16 @@
+
+<div class="container-fluid mt-5">
+  <button type="submit" class="btn" style="background: red" value="red"
+          (click)="chooseColor($event.target.value)">Red</button>
+  <button type="submit" class="btn ms-3" style="background: blue" value="blue"
+          (click)="chooseColor($event.target.value)">Blue</button>
+  <button type="submit" class="btn ms-3" style="background: yellow" value="yellow"
+          (click)="chooseColor($event.target.value)">Yellow</button>
+  <button type="submit" class="btn ms-3" style="background: green" value="green"
+          (click)="chooseColor($event.target.value)">Green</button>
+
+  <div class="form-floating mt-5">
+    <textarea class="form-control" style="height: 100px" [style.background]="color"></textarea>
+  </div>
+
+</div>
