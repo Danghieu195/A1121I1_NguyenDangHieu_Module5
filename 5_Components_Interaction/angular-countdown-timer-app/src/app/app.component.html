@@ -1,0 +1,19 @@
+<div class="container-fluid mt-3">
+
+  <h2>Countdown Timer</h2>
+
+  <div>
+    <label for="time" class="form-label">Time: </label>
+    <input type="text" class="form-control" id="time" placeholder="Type time" [(ngModel)]="time">
+  </div>
+
+  <div class="mt-3">
+    <button class="btn btn-secondary ms-2" type="button" (click)="startCountdown()">Start</button>
+    <button class="btn btn-secondary ms-2" type="button" (click)="stopCountdown()">Stop</button>
+    <button class="btn btn-secondary ms-2" type="button">Reset</button>
+  </div>
+
+
+  <app-count-timer [childTimeValue]="time"></app-count-timer>
+
+</div>
