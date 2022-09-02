@@ -1,0 +1,9 @@
+<div class="container-fluid mt-3">
+
+  <h2>Rating Bar</h2>
+
+  <button class="btn btn-secondary ms-2" type="button" value="{{value}}" *ngFor="let value of ratingValues" (click)="getValue($event.target.value)">{{value}}</button>
+
+  <app-rating-bar [childValue]="ratingValue"></app-rating-bar>
+
+</div>
