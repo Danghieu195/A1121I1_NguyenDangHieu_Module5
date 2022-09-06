@@ -1,0 +1,86 @@
+<div class="row">
+  <div class="col-xl-12">
+    <table class="table">
+      <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Type Name</th>
+        <th scope="col">Date of Birth</th>
+        <th scope="col">Gender</th>
+        <th scope="col">Identity Number</th>
+        <th scope="col">Phone Number</th>
+        <th scope="col">Email</th>
+        <th scope="col">Address</th>
+        <th scope="col">Edit</th>
+        <th scope="col">Delete</th>
+      </tr>
+      </thead>
+      <tbody>
+
+      <tr *ngFor="let customer of customers">
+        <th scope="row">{{customer.id}}</th>
+        <td>{{customer.customerName}}</td>
+        <td>{{customer.customerType.customerTypeName}}</td>
+        <td>{{customer.dateOfBirth}}</td>
+
+        <td>
+          <p *ngIf="customer.sex === 'true'"> Female</p>
+          <p *ngIf="customer.sex === 'false'"> Male</p>
+        </td>
+
+
+        <td>{{customer.identityNumber}}</td>
+        <td>{{customer.phoneNumber}}</td>
+        <td>{{customer.email}}</td>
+        <td>{{customer.address}}</td>
+
+        <td>
+          <!-- mang URL-->
+          <a class="text-dark text-decoration-none">Edit</a>
+        </td>
+
+        <td>
+          <button type="button" class="btn btn-secondary" data-bs-toggle="modal">
+            Delete
+          </button>
+        </td>
+      </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="row mt-3">
+  <div class="col-xl-12">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-plus" viewBox="0 0 16 16">
+      <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+      <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+    </svg>
+    <a class="text-dark text-decoration-none fw-bold ms-2">Add new customer? Click here!</a>
+  </div>
+</div>
+
+<!--<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
+<!--  <div class="modal-dialog">-->
+<!--    <div class="modal-content">-->
+
+<!--      <div class="modal-header">-->
+<!--        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>-->
+<!--        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+<!--      </div>-->
+
+<!--      <div class="modal-body">-->
+<!--        <p>Customer Id: {{customer?.id}}</p>-->
+<!--        <p>Customer name: {{customer?.customerName}}</p>-->
+<!--        <p>Customer address: {{customer?.address}}</p>-->
+<!--      </div>-->
+
+<!--      <div class="modal-footer">-->
+<!--        &lt;!&ndash;        dismiss modal&ndash;&gt;-->
+<!--        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>-->
+<!--        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="deleteCustomer(customer?.id)">Delete</button>-->
+<!--        &lt;!&ndash;        <button type="button" class="btn btn-secondary" (click)="deleteCustomer(customer?.id)">Delete</button>&ndash;&gt;-->
+<!--      </div>-->
+
