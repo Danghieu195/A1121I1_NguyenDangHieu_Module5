@@ -1,0 +1,42 @@
+<p>login works!</p>
+<div class="container-fluid">
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" novalidate>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Email: </label>
+      <input type="text" class="form-control" id="email" name="email" formControlName="email">
+    </div>
+
+    <div class="mb-3 text-danger"
+         *ngIf="loginForm.get('email').hasError('required') &&
+                  (loginForm.get('email').dirty || loginForm.get('email').touched)">
+      Please type email!
+    </div>
+
+    <div class="mb-3 text-danger"
+         *ngIf="loginForm.get('email').hasError('email') &&
+                  (loginForm.get('email').dirty || loginForm.get('email').touched)">
+      Please type right email format!
+    </div>
+
+    <div class="mb-3">
+      <label for="password" class="form-label">Password: </label>
+      <input type="password" class="form-control" id="password" name="password" formControlName="password">
+    </div>
+
+    <div class="mb-3 text-danger"
+         *ngIf="loginForm.get('password').hasError('required') &&
+                  (loginForm.get('password').dirty || loginForm.get('password').touched)">
+      Please type password!
+    </div>
+
+    <div class="mb-3 text-danger"
+         *ngIf="loginForm.get('password').hasError('minlength') &&
+                  (loginForm.get('password').dirty || loginForm.get('password').touched)">
+      Password characters should be greater than 6!
+    </div>
+
+    <button type="submit" class="btn btn-secondary" [disabled]="loginForm.invalid">Login</button>
+
+  </form>
+</div>
