@@ -1,0 +1,8 @@
+<div class="container-fluid">
+  <h2 class="text-secondary fw-bolder">Dictionary</h2>
+
+  <button type="button" class="btn btn-secondary ms-3" [value]="word.word" *ngFor="let word of dictionaries" (click)="getMean($event.target.value)">{{word.word}}</button>
+  <br>
+  <input type="text" [value]="mean" disabled class="mt-3">
+
+</div>
