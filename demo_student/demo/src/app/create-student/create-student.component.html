@@ -1,0 +1,61 @@
+<p class="align-content-center"><h2>Create</h2>
+<br>
+<div class="container-fluid">
+  <div class="col-6">
+    <form [formGroup]="studentForm" (ngSubmit)="add()">
+
+      <div class="form-group">
+        <label>Avatar:</label>
+        <input class="form-control" name="avatar" formControlName="avatar">
+      </div>
+
+      <div class="form-group">
+        <label>Name:</label>
+        <input class="form-control" name="name" formControlName="name">
+      </div>
+      <div class="alert alert-danger" role="alert"
+           *ngIf="studentForm.get('name')?.invalid && studentForm.get('name')?.touched">
+        Name is invalid.
+      </div>
+
+
+      <div class="form-group">
+        <label>Address:</label>
+        <input class="form-control" formControlName="address">
+      </div>
+      <div class="alert alert-danger" role="alert"
+           *ngIf="studentForm.get('address')?.invalid && studentForm.get('address')?.touched">
+        Address is invalid.
+      </div>
+
+      <div class="form-group">
+        <label>Phone:</label>
+        <input class="form-control" formControlName="phone">
+      </div>
+      <div class="alert alert-danger" role="alert"
+           *ngIf="studentForm.get('phone')?.invalid && studentForm.get('phone')?.touched">
+        Input phone number please.
+      </div>
+
+      <div class="form-group">
+        <label>Email:</label>
+        <input class="form-control" formControlName="email">
+      </div>
+      <div class="alert alert-danger" role="alert"
+           *ngIf="studentForm.get('email')?.invalid && studentForm.get('email')?.touched">
+        Email is invalid.
+      </div>
+
+      <div class="form-group">
+        <label>Category</label>
+        <select class="form-control" id="category" formControlName="category">
+          <option *ngFor ="let cate of categories" [ngValue] = "cate">{{cate.category_subject}}</option>
+        </select>
+      </div>
+
+      <button class="btn btn-primary">Create</button>
+
+    </form>
+  </div>
+</div>
+

@@ -1,0 +1,427 @@
+{
+  "rentalTypes": [
+    {
+      "rentalTypeId": 1,
+      "rentalTypeName": "year"
+    },
+    {
+      "rentalTypeId": 2,
+      "rentalTypeName": "month"
+    },
+    {
+      "rentalTypeId": 3,
+      "rentalTypeName": "day"
+    },
+    {
+      "rentalTypeId": 4,
+      "rentalTypeName": "hour"
+    }
+  ],
+  "serviceTypes": [
+    {
+      "serviceTypeId": 1,
+      "serviceTypeName": "Villa"
+    },
+    {
+      "serviceTypeId": 2,
+      "serviceTypeName": "House"
+    },
+    {
+      "serviceTypeId": 3,
+      "serviceTypeName": "Room"
+    }
+  ],
+  "facilities": [
+    {
+      "serviceId": 1,
+      "serviceName": "Villa Beach Front",
+      "serviceArea": 25000,
+      "rentalCost": 1000000,
+      "maxPeople": 10,
+      "rentalType": {
+        "rentalTypeId": 3,
+        "rentalTypeName": "day"
+      },
+      "serviceType": {
+        "serviceTypeId": 1,
+        "serviceTypeName": "Villa"
+      },
+      "roomStandard": "vip",
+      "extraAmenity": "Có hồ bơi",
+      "poolArea": 500,
+      "levels": 4
+    },
+    {
+      "serviceId": 2,
+      "serviceName": "House Princess 01",
+      "serviceArea": 14000,
+      "rentalCost": 500000,
+      "maxPeople": 7,
+      "rentalType": {
+        "rentalTypeId": 2,
+        "rentalTypeName": "month"
+      },
+      "serviceType": {
+        "serviceTypeId": 2,
+        "serviceTypeName": "House"
+      },
+      "roomStandard": "vip",
+      "extraAmenity": "Có thêm bếp nướng",
+      "levels": 3
+    },
+    {
+      "serviceId": 3,
+      "serviceName": "Room Twin 01",
+      "serviceArea": 5000,
+      "rentalCost": 100000,
+      "maxPeople": 2,
+      "rentalType": {
+        "rentalTypeId": 4,
+        "rentalTypeName": "hour"
+      },
+      "serviceType": {
+        "serviceTypeId": 3,
+        "serviceTypeName": "Room"
+      },
+      "roomStandard": "normal",
+      "extraAmenity": "Có tivi"
+    },
+    {
+      "serviceId": 4,
+      "serviceName": "Villa No Beach Front",
+      "serviceArea": 22000,
+      "rentalCost": 900000,
+      "maxPeople": 8,
+      "rentalType": {
+        "rentalTypeId": 3,
+        "rentalTypeName": "day"
+      },
+      "serviceType": {
+        "serviceTypeId": 1,
+        "serviceTypeName": "Villa"
+      },
+      "roomStandard": "normal",
+      "extraAmenity": "Có hồ bơi",
+      "poolArea": 300,
+      "levels": 3
+    },
+    {
+      "serviceId": 5,
+      "serviceName": "House Princess 02",
+      "serviceArea": 10000,
+      "rentalCost": 400000,
+      "maxPeople": 5,
+      "rentalType": {
+        "rentalTypeId": 3,
+        "rentalTypeName": "day"
+      },
+      "serviceType": {
+        "serviceTypeId": 2,
+        "serviceTypeName": "House"
+      },
+      "roomStandard": "normal",
+      "extraAmenity": "Có thêm bếp nướng",
+      "levels": 2
+    },
+    {
+      "serviceId": 6,
+      "serviceName": "Room Twin 02",
+      "serviceArea": 3000,
+      "rentalCost": 90000,
+      "maxPeople": 2,
+      "rentalType": {
+        "rentalTypeId": 4,
+        "rentalTypeName": "hour"
+      },
+      "serviceType": {
+        "serviceTypeId": 3,
+        "serviceTypeName": "Room"
+      },
+      "roomStandard": "normal",
+      "extraAmenity": "Có tivi"
+    }
+  ],
+  "customerTypes": [
+    {
+      "id": 1,
+      "customerTypeName": "Diamond"
+    },
+    {
+      "id": 2,
+      "customerTypeName": "Platinum"
+    },
+    {
+      "id": 3,
+      "customerTypeName": "Gold"
+    },
+    {
+      "id": 4,
+      "customerTypeName": "Silver"
+    },
+    {
+      "id": 5,
+      "customerTypeName": "Member"
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "customerName": "Nguyễn Thị Hào",
+      "dateOfBirth": "1970-11-07",
+      "sex": "Nữ",
+      "identityNumber": "643431213",
+      "phoneNumber": "0945423362",
+      "email": "thihao07@gmail.com",
+      "address": "23 Nguyễn Hoàng, Đà Nẵng",
+      "customerType": {
+        "customerTypeName": "Member"
+      }
+    },
+    {
+      "id": 2,
+      "customerName": "Phạm Xuân Diệu",
+      "dateOfBirth": "1992-08-08",
+      "sex": "Nữ",
+      "identityNumber": "865342123",
+      "phoneNumber": "0954333333",
+      "email": "xuandieu92@gmail.com",
+      "address": "K77/22 Thái Phiên, Quảng Trị",
+      "customerType": {
+        "customerTypeName": "Gold"
+      }
+    },
+    {
+      "id": 3,
+      "customerName": "Trương Đình Nghệ",
+      "dateOfBirth": "1990-02-27",
+      "sex": "Nam",
+      "identityNumber": "488645199",
+      "phoneNumber": "0373213122",
+      "email": "nghenhan2702@gmail.com",
+      "address": "K323/12 Ông Ích Khiêm, Vinh",
+      "customerType": {
+        "customerTypeName": "Diamond"
+      }
+    },
+    {
+      "id": 4,
+      "customerName": "Dương Văn Quan",
+      "dateOfBirth": "1981-07-08",
+      "sex": "Nam",
+      "identityNumber": "543432111",
+      "phoneNumber": "0490039241",
+      "email": "duongquan@gmail.com",
+      "address": "K453/12 Lê Lợi, Đà Nẵng",
+      "customerType": {
+        "customerTypeName": "Diamond"
+      }
+    },
+    {
+      "id": 5,
+      "customerName": "Hoàng Trần Nhi Nhi",
+      "dateOfBirth": "1995-12-09",
+      "sex": "Nữ",
+      "identityNumber": "795453345",
+      "phoneNumber": "0312345678",
+      "email": "nhinhi123@gmail.com",
+      "address": "224 Lý Thái Tổ, Gia Lai",
+      "customerType": {
+        "customerTypeName": "Silver"
+      }
+    },
+    {
+      "id": 6,
+      "customerName": "Tôn Nữ Mộc Châu",
+      "dateOfBirth": "2005-12-06",
+      "sex": "Nữ",
+      "identityNumber": "732434215",
+      "phoneNumber": "0988888844",
+      "email": "tonnuchau@gmail.com",
+      "address": "37 Yên Thế, Đà Nẵng",
+      "customerType": {
+        "customerTypeName": "Silver"
+      }
+    },
+    {
+      "id": 7,
+      "customerName": "Nguyễn Mỹ Kim",
+      "dateOfBirth": "1984-04-08",
+      "sex": "Nữ",
+      "identityNumber": "856453123",
+      "phoneNumber": "0912345698",
+      "email": "kimcuong84@gmail.com",
+      "address": "K123/45 Lê Lợi, Hồ Chí Minh",
+      "customerType": {
+        "customerTypeName": "Diamond"
+      }
+    },
+    {
+      "id": 8,
+      "customerName": "Nguyễn Thị Hào",
+      "dateOfBirth": "1999-04-08",
+      "sex": "Nữ",
+      "identityNumber": "965656433",
+      "phoneNumber": "0763212345",
+      "email": "haohao99@gmail.com",
+      "address": "55 Nguyễn Văn Linh, Kon Tum",
+      "customerType": {
+        "customerTypeName": "Gold"
+      }
+    },
+    {
+      "id": 9,
+      "customerName": "Trần Đại Danh",
+      "dateOfBirth": "1994-07-01",
+      "sex": true,
+      "identityNumber": "432341235",
+      "phoneNumber": "0643343433",
+      "email": "danhhai99@gmail.com",
+      "address": "24 Lý Thường Kiệt, Quảng Ngãi",
+      "customerType": {
+        "customerTypeName": "Diamond"
+      }
+    },
+    {
+      "id": 10,
+      "customerName": "Nguyễn Tâm Đắc",
+      "dateOfBirth": "1989-07-01",
+      "sex": true,
+      "identityNumber": "344343432",
+      "phoneNumber": "0987654321",
+      "email": "dactam@gmail.com",
+      "address": "11 Ngô Quyền, Đà Nẵng",
+      "customerType": {
+        "customerTypeName": "Platinum"
+      }
+    },
+    {
+      "id": "11",
+      "customerName": "hieu",
+      "dateOfBirth": "1997-19-05",
+      "sex": "false",
+      "identityNumber": "112312312",
+      "phoneNumber": "0917332502",
+      "email": "asc@gmail.com",
+      "customerType": {
+        "customerTypeName": {
+          "id": 3,
+          "customerTypeName": "Gold"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "customerName": "Hiu",
+      "dateOfBirth": "1997-19-06",
+      "sex": "false",
+      "identityNumber": "910182747",
+      "phoneNumber": "0917332503",
+      "email": "asc@gmail.com",
+      "address": "Da Nang",
+      "customerType": {
+        "id": 1,
+        "customerTypeName": "Diamond"
+      }
+    }
+  ],
+  "contracts": [
+    {
+      "contractId": 1,
+      "startDate": "2020-07-14",
+      "endDate": "2020-07-21",
+      "deposit": 200000,
+      "customer": {
+        "customerId": 3,
+        "customerName": "Trương Đình Nghệ"
+      },
+      "facility": {
+        "serviceId": 1,
+        "serviceName": "Villa Beach Front"
+      }
+    },
+    {
+      "contractId": 2,
+      "startDate": "2021-03-15",
+      "endDate": "2021-03-17",
+      "deposit": 50000,
+      "customer": {
+        "customerId": 4,
+        "customerName": "Dương Văn Quan"
+      },
+      "facility": {
+        "serviceId": 2,
+        "serviceName": "House Princess 01"
+      }
+    },
+    {
+      "contractId": 3,
+      "startDate": "2021-01-14",
+      "endDate": "2021-01-18",
+      "deposit": 100000,
+      "customer": {
+        "customerId": 5,
+        "customerName": "Hoàng Trần Nhi Nhi"
+      },
+      "facility": {
+        "serviceId": 5,
+        "serviceName": "House Princess 02"
+      }
+    },
+    {
+      "contractId": 4,
+      "startDate": "2021-07-14",
+      "endDate": "2021-07-15",
+      "deposit": 0,
+      "customer": {
+        "customerId": 2,
+        "customerName": "Phạm Xuân Diệu"
+      },
+      "facility": {
+        "serviceId": 6,
+        "serviceName": "Room Twin 02"
+      }
+    },
+    {
+      "contractId": 5,
+      "startDate": "2021-06-01",
+      "endDate": "2021-06-03",
+      "deposit": 0,
+      "customer": {
+        "customerId": 7,
+        "customerName": "Nguyễn Mỹ Kim"
+      },
+      "facility": {
+        "serviceId": 6,
+        "serviceName": "Room Twin 02"
+      }
+    },
+    {
+      "contractId": 6,
+      "startDate": "2021-09-02",
+      "endDate": "2021-09-05",
+      "deposit": 100000,
+      "customer": {
+        "customerId": 4,
+        "customerName": "Dương Văn Quan"
+      },
+      "facility": {
+        "serviceId": 4,
+        "serviceName": "Villa No Beach Front"
+      }
+    },
+    {
+      "contractId": 7,
+      "startDate": "2021-06-17",
+      "endDate": "2021-06-18",
+      "deposit": 150000,
+      "customer": {
+        "customerId": 4,
+        "customerName": "Dương Văn Quan"
+      },
+      "facility": {
+        "serviceId": 1,
+        "serviceName": "Villa Beach Front"
+      }
+    }
+  ]
+}

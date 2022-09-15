@@ -1,4 +1,5 @@
 <h1>student profile</h1>
+<a routerLink="create" class="btn btn-primary m-3">Create</a>
 <table class="table table-success table-striped">
   <tr>
     <th>Avatar</th>
@@ -7,22 +8,30 @@
     <th>Address</th>
     <th>Phone Number</th>
     <th>Email</th>
+    <th>Category</th>
     <th>Action</th>
   </tr>
 
-  <tr *ngFor="let stu of student">
+  <tr *ngFor="let stu of listStudent">
     <td>
-      <img style="width : 50px" [src] = "stu.avatar"/>
+      <img style="width : 50px" [src]="stu.avatar"/>
     </td>
     <td>{{stu.id}}</td>
-    <td>{{stu.name}}</td>
+    <td>{{stu.name | titlecase}}</td>
     <td>{{stu.address}}</td>
     <td>{{stu.phone}}</td>
     <td>{{stu.email}}</td>
+    <td>{{stu.category.category_subject}}</td>
     <td>
-      <button type="button" class="btn btn-danger">Delete</button>
-      <button type="button" class="btn btn-primary">Detail</button>
+      <button class="btn m-lg-3" (click)="openDialogDelete(stu.id)"
+              style="background-color: #b21f2d; color: azure; cursor: pointer">Delete
+      </button>
+      <a style="background-color: blue; color: white" type="button" class="btn m-lg-3"
+         routerLink="edit/{{stu.id}}">Edit</a>
     </td>
   </tr>
 </table>
+
+
+
 
