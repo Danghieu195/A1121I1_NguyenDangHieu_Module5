@@ -139,6 +139,43 @@
       },
       "roomStandard": "normal",
       "extraAmenity": "Có tivi"
+    },
+    {
+      "id": "102",
+      "facilityName": "Villa Vallli",
+      "rentalType": {
+        "rentalTypeId": 2,
+        "rentalTypeName": "month"
+      },
+      "serviceType": {
+        "serviceTypeId": 2,
+        "serviceTypeName": "House"
+      }
+    },
+    {
+      "id": "15",
+      "facilityName": "abc",
+      "rentalType": {
+        "rentalTypeId": 1,
+        "rentalTypeName": "year"
+      },
+      "serviceType": {
+        "serviceTypeId": 1,
+        "serviceTypeName": "Villa"
+      }
+    },
+    {
+      "serviceId": "105",
+      "serviceName": "asdas",
+      "rentalType": {
+        "rentalTypeId": 1,
+        "rentalTypeName": "year"
+      },
+      "serviceType": {
+        "serviceTypeId": 1,
+        "serviceTypeName": "Villa"
+      },
+      "id": "vbWMkwg"
     }
   ],
   "customerTypes": [
@@ -213,113 +250,6 @@
       "email": "duongquan@gmail.com",
       "address": "K453/12 Lê Lợi, Đà Nẵng",
       "customerType": {
-        "customerTypeName": "Diamond"
-      }
-    },
-    {
-      "id": 5,
-      "customerName": "Hoàng Trần Nhi Nhi",
-      "dateOfBirth": "1995-12-09",
-      "sex": "Nữ",
-      "identityNumber": "795453345",
-      "phoneNumber": "0312345678",
-      "email": "nhinhi123@gmail.com",
-      "address": "224 Lý Thái Tổ, Gia Lai",
-      "customerType": {
-        "customerTypeName": "Silver"
-      }
-    },
-    {
-      "id": 6,
-      "customerName": "Tôn Nữ Mộc Châu",
-      "dateOfBirth": "2005-12-06",
-      "sex": "Nữ",
-      "identityNumber": "732434215",
-      "phoneNumber": "0988888844",
-      "email": "tonnuchau@gmail.com",
-      "address": "37 Yên Thế, Đà Nẵng",
-      "customerType": {
-        "customerTypeName": "Silver"
-      }
-    },
-    {
-      "id": 7,
-      "customerName": "Nguyễn Mỹ Kim",
-      "dateOfBirth": "1984-04-08",
-      "sex": "Nữ",
-      "identityNumber": "856453123",
-      "phoneNumber": "0912345698",
-      "email": "kimcuong84@gmail.com",
-      "address": "K123/45 Lê Lợi, Hồ Chí Minh",
-      "customerType": {
-        "customerTypeName": "Diamond"
-      }
-    },
-    {
-      "id": 8,
-      "customerName": "Nguyễn Thị Hào",
-      "dateOfBirth": "1999-04-08",
-      "sex": "Nữ",
-      "identityNumber": "965656433",
-      "phoneNumber": "0763212345",
-      "email": "haohao99@gmail.com",
-      "address": "55 Nguyễn Văn Linh, Kon Tum",
-      "customerType": {
-        "customerTypeName": "Gold"
-      }
-    },
-    {
-      "id": 9,
-      "customerName": "Trần Đại Danh",
-      "dateOfBirth": "1994-07-01",
-      "sex": true,
-      "identityNumber": "432341235",
-      "phoneNumber": "0643343433",
-      "email": "danhhai99@gmail.com",
-      "address": "24 Lý Thường Kiệt, Quảng Ngãi",
-      "customerType": {
-        "customerTypeName": "Diamond"
-      }
-    },
-    {
-      "id": 10,
-      "customerName": "Nguyễn Tâm Đắc",
-      "dateOfBirth": "1989-07-01",
-      "sex": true,
-      "identityNumber": "344343432",
-      "phoneNumber": "0987654321",
-      "email": "dactam@gmail.com",
-      "address": "11 Ngô Quyền, Đà Nẵng",
-      "customerType": {
-        "customerTypeName": "Platinum"
-      }
-    },
-    {
-      "id": "11",
-      "customerName": "hieu",
-      "dateOfBirth": "1997-19-05",
-      "sex": "false",
-      "identityNumber": "112312312",
-      "phoneNumber": "0917332502",
-      "email": "asc@gmail.com",
-      "customerType": {
-        "customerTypeName": {
-          "id": 3,
-          "customerTypeName": "Gold"
-        }
-      }
-    },
-    {
-      "id": "12",
-      "customerName": "Hiu",
-      "dateOfBirth": "1997-19-06",
-      "sex": "false",
-      "identityNumber": "910182747",
-      "phoneNumber": "0917332503",
-      "email": "asc@gmail.com",
-      "address": "Da Nang",
-      "customerType": {
-        "id": 1,
         "customerTypeName": "Diamond"
       }
     }

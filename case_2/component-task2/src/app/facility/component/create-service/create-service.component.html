@@ -1,0 +1,64 @@
+<div class="col-xl-11" xmlns:th="http://www.w3.org/1999/xhtml">
+  <div class="row">
+    <div class="col-xl-12">
+      <form [formGroup]="facilityForm" (ngSubmit)="addFacility()" class="mb-3">
+
+        <div class="mb-3">
+          <label for="serviceId" class="form-label">Service Id: </label>
+          <input type="text" class="form-control" id="serviceId" name="serviceId" formControlName="serviceId">
+        </div>
+
+        <div class="mb-3 text-danger"
+             *ngIf="facilityForm.get('serviceId').hasError('required') &&
+                  (facilityForm.get('serviceId').dirty || facilityForm.get('serviceId').touched)">
+          Please type service id!
+        </div>
+
+        <div class="mb-3">
+          <label for="rentalType" class="form-label">Rental Type: </label><br>
+          <select id="rentalType" name="rentalType" formControlName="rentalType">
+            <option *ngFor="let rentalType of rentalTypes" [ngValue]="rentalType">{{rentalType.rentalTypeName}}</option>
+          </select>
+        </div>
+
+        <div class="mb-3 text-danger"
+             *ngIf="facilityForm.get('rentalType').hasError('required') &&
+                  (facilityForm.get('rentalType').dirty || facilityForm.get('rentalType').touched)">
+          Please choose rental type!
+        </div>
+
+        <div class="mb-3">
+          <label for="serviceType" class="form-label">Service Type: </label><br>
+          <select id="serviceType" name="serviceType" formControlName="serviceType">
+            <option *ngFor="let serviceType of serviceTypes" [ngValue]="serviceType">{{serviceType.serviceTypeName}}</option>
+          </select>
+        </div>
+
+        <div class="mb-3 text-danger"
+             *ngIf="facilityForm.get('serviceType').hasError('required') &&
+                  (facilityForm.get('serviceType').dirty || facilityForm.get('serviceType').touched)">
+          Please choose service type!
+        </div>
+
+        <div class="mb-3">
+          <label for="serviceName" class="form-label">Facility Name: </label>
+          <input type="text" class="form-control" id="serviceName" name="serviceName" formControlName="serviceName">
+        </div>
+
+        <div class="mb-3 text-danger"
+             *ngIf="facilityForm.get('serviceName').hasError('required') &&
+                  (facilityForm.get('serviceName').dirty || facilityForm.get('serviceName').touched)">
+          Please type facility name!
+        </div>
+
+        <button type="submit" class="btn btn-secondary">Add New Service</button>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-circle-fill ms-5" viewBox="0 0 16 16">
+          <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+        </svg>
+        <a href="/service" class="ms-1 text-decoration-none text-dark">Back to service list!</a>
+      </form>
+    </div>
+  </div>
+</div>
+

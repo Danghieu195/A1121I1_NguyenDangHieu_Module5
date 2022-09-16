@@ -23,18 +23,6 @@
         "category_id": 2,
         "category_subject": "Physical"
       }
-    },
-    {
-      "avatar": "",
-      "id": "3",
-      "name": "Jun",
-      "address": "Hai Ho, Da Nang",
-      "phone": "0971335205",
-      "email": "danghieu.nguyen.vtp@gmail.com",
-      "category": {
-        "category_id": 2,
-        "category_subject": "Physical"
-      }
     }
   ],
   "category": [

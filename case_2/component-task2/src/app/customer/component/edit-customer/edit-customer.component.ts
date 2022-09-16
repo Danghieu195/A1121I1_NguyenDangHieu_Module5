@@ -50,32 +50,6 @@ export class EditCustomerComponent implements OnInit {
               private router: Router,
               private snackBar: MatSnackBar) { }
 
-  // ngOnInit(): void {
-  //   this.customerTypeService.getAllCustomerTypes().subscribe(customerTypes => {
-  //     this.customerTypes = customerTypes;
-  //
-  //     this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
-  //       this.id = paramMap.get('id');
-  //       this.getCustomer(this.id);
-  //     });
-  //   });
-  // }
-  //
-  // private getCustomer(id: string) {
-  //   return this.customerService.findCustomerById(id).subscribe(customer => {
-  //     this.customerForm.setValue(customer);
-  //   }, error => {
-  //     console.log(error);
-  //   })
-  // }
-  //
-  // updateCustomer() {
-  //   this.customerService.updateCustomer(this.activatedRoute.snapshot.params.id, this.customerForm.value).subscribe(
-  //     (data) => {
-  //       this.router.navigateByUrl('/customer');
-  //       this.snackBar.open('Update successfully!', 'ok');
-  //     });
-  // }
 
   ngOnInit(): void {
     this.getType();
@@ -96,7 +70,7 @@ export class EditCustomerComponent implements OnInit {
   updateCustomer() {
     this.customerService.updateCustomer(this.activatedRoute.snapshot.params.id, this.customerForm.value).subscribe(
       (data) => {
-        this.router.navigateByUrl('');
+        this.router.navigateByUrl('customer');
         this.snackBar.open('Update successfully!', 'ok');
       });
   }

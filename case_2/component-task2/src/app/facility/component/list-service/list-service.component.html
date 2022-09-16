@@ -1,0 +1,64 @@
+
+    <div class="col-xl-11">
+      <div class="row">
+        <div class="col-xl-12">
+          <table class="table">
+            <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
+              <th scope="col">Area</th>
+              <th scope="col">Rental Cost</th>
+              <th scope="col">Max People</th>
+              <th scope="col">Rental Type</th>
+              <th scope="col">Service Type</th>
+              <th scope="col">Room Standard</th>
+              <th scope="col">Extra Amenity</th>
+              <th scope="col">Pool Area</th>
+              <th scope="col">Levels</th>
+              <th scope="col">Edit</th>
+              <th scope="col">Delete</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            <tr *ngFor="let facility of facilities">
+              <th scope="row">{{facility.serviceId}}</th>
+              <td>{{facility.serviceName}}</td>
+              <td>{{facility.serviceArea}}</td>
+              <td>{{facility.rentalCost}}</td>
+              <td>{{facility.maxPeople}}</td>
+              <td>{{facility.rentalType.rentalTypeName}}</td>
+              <td>{{facility.serviceType.serviceTypeName}}</td>
+              <td>{{facility.roomStandard}}</td>
+              <td>{{facility.extraAmenity}}</td>
+              <td>{{facility.poolArea}}</td>
+              <td>{{facility.levels}}</td>
+
+              <td>
+                <a href="/service/{id}/edit(id={{facility.serviceId}})" class="btn m-lg-3"
+                   style="background-color: blue; color: azure; cursor: pointer">Edit</a>
+              </td>
+
+              <td>
+                <a href="/service/{id}/delete(id={{facility.serviceId}})" class="btn m-lg-3"
+                   style="background-color: #b21f2d; color: azure; cursor: pointer">Delete</a>
+              </td>
+
+            </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-xl-12">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-plus" viewBox="0 0 16 16">
+            <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+            <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+          </svg>
+          <a routerLink="/create-service" class="text-dark text-decoration-none fw-bold ms-2">Add new service? Click here!</a>
+        </div>
+      </div>
+    </div>

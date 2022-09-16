@@ -22,10 +22,6 @@ export class CustomerService {
     return this.http.delete(this.API_URL + '/' + id);
   }
 
-  // findById(id: string): Observable<Customer[]> {
-  //   return this.http.get<Customer[]>(`${this.API_URL}/${id}`);
-  // }
-
   saveCustomer(customer): Observable<Customer> {
     return this.http.post<Customer>(this.API_URL, customer);
   }

@@ -2,6 +2,7 @@ import {Component, Inject, OnInit} from '@angular/core';
 import {CustomerService} from "../../service/customer.service";
 import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 import {MatSnackBar} from '@angular/material/snack-bar';
+import {Router, ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-delete-customer',
@@ -16,7 +17,9 @@ export class DeleteCustomerComponent implements OnInit {
   constructor(public dialogRef: MatDialogRef<DeleteCustomerComponent>,
               @Inject(MAT_DIALOG_DATA) public data: any,
               private customerService: CustomerService,
-              private snackBar: MatSnackBar) { }
+              private snackBar: MatSnackBar,
+              private router: Router,
+              private activeRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.nameCustomer = this.data.data1.customerName;

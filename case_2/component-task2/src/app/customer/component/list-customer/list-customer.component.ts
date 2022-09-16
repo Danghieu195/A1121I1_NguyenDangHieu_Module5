@@ -19,10 +19,6 @@ export class ListCustomerComponent implements OnInit {
               private dialog: MatDialog) { }
 
   ngOnInit(): void {
-    this.getAllCustomers();
-  }
-
-  getAllCustomers() {
     this.customerService.getAllCustomers().subscribe(customers => {
       this.customers = customers;
       console.log('list customers success!');

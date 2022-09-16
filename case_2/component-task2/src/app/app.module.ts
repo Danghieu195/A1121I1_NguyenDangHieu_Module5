@@ -13,6 +13,9 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {MatSnackBarModule} from "@angular/material/snack-bar";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { EditCustomerComponent } from './customer/component/edit-customer/edit-customer.component';
+import { ListServiceComponent } from './facility/component/list-service/list-service.component';
+import { CreateServiceComponent } from './facility/component/create-service/create-service.component';
+import { EditServiceComponent } from './facility/component/edit-service/edit-service.component';
 
 
 @NgModule({
@@ -23,6 +26,9 @@ import { EditCustomerComponent } from './customer/component/edit-customer/edit-c
     CreateCustomerComponent,
     DeleteCustomerComponent,
     EditCustomerComponent,
+    ListServiceComponent,
+    CreateServiceComponent,
+    EditServiceComponent,
   ],
   imports: [
     BrowserModule,
